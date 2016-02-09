@@ -1,0 +1,68 @@
+{
+  "root": "./public",
+  "deployment": {
+    "local": {
+      "path": "public"
+    },
+    "remote": {
+      "host": "user@domain.com:directory/path"
+    },
+    "rsync": {
+      "options": "-avzh --delete -e \"ssh -p 8888\""
+    }
+  },
+  "assets": {
+    "base": "assets/",
+    "dest": "public/assets/"
+  },
+  "versioning": {
+    "files": [
+      "./package.json",
+      "./bower.json"
+    ]
+  },
+  "scripts": {
+    "base"  : "js/",
+    "files" : [
+      "js/**/*.js"
+    ],
+    "dest"  : "public/js/"
+  },
+  "components": {
+    "base": "assets/components/"
+  },
+  "stylus": {
+    "base" : "styles/main.styl",
+    "files": [
+      "styles/**/*.styl"
+    ],
+    "dest" : "public/css/"
+  },
+  "images": {
+    "base" : "images/",
+    "files": [
+      "images/**/*"
+    ],
+    "dest" : "public/images/"
+  },
+  "bower": {
+    "base" : "bower_components/",
+    "files": [
+      "bower_components/**/*"
+    ],
+    "dest" : "public/bower_components/"
+  },
+  "patternlab": {
+    "styleguide": {
+      "files": [
+        "source/styleguide/**"
+      ],
+      "dest": "public/styleguide/"
+    },
+    "files": [
+      "patternlab/patterns/**/*.twig",
+      "patternlab/patterns/**/*.json",
+      "patternlab/_data/*.json"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+# OSX
+.DS_Store
+
+# Composer Libraries
+vendor/*
+
+# Node modules
+node_modules/*
+
+# Bower Components
+bower_components/*
+
+
+# Patternlab generated content
+public/*
+
+

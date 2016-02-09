@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="{{ htmlClass }}">
+	<head>
+		<title>{{ pageTitle }}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic,700,700italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../../css/main.css?{{ cacheBuster }}" media="all" />
+		<script src="/js/main.js?{{ cacheBuster }}"></script>
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{{ patternLabHead | raw }}
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="{{ bodyClass }}">
