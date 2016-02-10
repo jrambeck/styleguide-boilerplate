@@ -157,7 +157,7 @@ gulp.task('watch', function () {
   // Watch Bower
   gulp.watch(
     config.bower.files,
-    ['stylus']
+    ['bower']
   );
 
 
