@@ -1,5 +1,5 @@
 {
-  "name": "champaign-styleguide",
+  "name": "styleguide",
   "version": "1.0.0",
   "description": "Patternlab, Prepocessors, etc.",
   "main": "gulpfile.js",
